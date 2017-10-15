@@ -169,9 +169,47 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IndoorMap/Pods-IndoorMap-resources.sh",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar_noarrow.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar_noarrow@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar_noarrow@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBeetrootSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBeetrootSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBeetrootSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlackSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlackSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlackSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconCandySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconCandySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconCandySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconGreySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconGreySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconGreySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconLemonSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconLemonSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconLemonSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconTransparentSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconTransparentSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconTransparentSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall@3x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -184,13 +222,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndoorMap-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE97643D1C1F12B30058A4DC /* Check TODOs */ = {

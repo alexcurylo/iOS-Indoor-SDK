@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A94A8C90D75398C182A7EAE /* libPods-IndoorLocationWithARKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A9A6B38B7FD69B47E45F7D /* libPods-IndoorLocationWithARKit.a */; };
 		A5075D121F73E67700522C24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5075D111F73E67700522C24 /* AppDelegate.m */; };
 		A5075D151F73E67700522C24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5075D141F73E67700522C24 /* ViewController.m */; };
 		A5075D181F73E67700522C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5075D161F73E67700522C24 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58743931813F378FF5F8821D /* Pods-IndoorLocationWithARKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorLocationWithARKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorLocationWithARKit/Pods-IndoorLocationWithARKit.release.xcconfig"; sourceTree = "<group>"; };
 		A5075D0D1F73E67700522C24 /* IndoorLocationWithARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorLocationWithARKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5075D101F73E67700522C24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5075D111F73E67700522C24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		A5075D1C1F73E67700522C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5075D1E1F73E67700522C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5075D1F1F73E67700522C24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5A9A6B38B7FD69B47E45F7D /* libPods-IndoorLocationWithARKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IndoorLocationWithARKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA154AEDE19B88406C4785C7 /* Pods-IndoorLocationWithARKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorLocationWithARKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorLocationWithARKit/Pods-IndoorLocationWithARKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A94A8C90D75398C182A7EAE /* libPods-IndoorLocationWithARKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C7BA0B1FC6919C8FE8C4A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA154AEDE19B88406C4785C7 /* Pods-IndoorLocationWithARKit.debug.xcconfig */,
+				58743931813F378FF5F8821D /* Pods-IndoorLocationWithARKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		991D7DBD4799D55D9754022C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5A9A6B38B7FD69B47E45F7D /* libPods-IndoorLocationWithARKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5075D041F73E67600522C24 = {
 			isa = PBXGroup;
 			children = (
 				A5075D0F1F73E67700522C24 /* IndoorLocationWithARKit */,
 				A5075D0E1F73E67700522C24 /* Products */,
+				04C7BA0B1FC6919C8FE8C4A5 /* Pods */,
+				991D7DBD4799D55D9754022C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,10 +102,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5075D231F73E67700522C24 /* Build configuration list for PBXNativeTarget "IndoorLocationWithARKit" */;
 			buildPhases = (
+				F188B8CFD49C1E005EA6AB5B /* [CP] Check Pods Manifest.lock */,
 				A5075D261F73EDBE00522C24 /* Check TODOs */,
 				A5075D091F73E67700522C24 /* Sources */,
 				A5075D0A1F73E67700522C24 /* Frameworks */,
 				A5075D0B1F73E67700522C24 /* Resources */,
+				68E7012319D3829EE4BE4962 /* [CP] Embed Pods Frameworks */,
+				552AE9757E88DD8283745542 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,74 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		552AE9757E88DD8283745542 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IndoorLocationWithARKit/Pods-IndoorLocationWithARKit-resources.sh",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar_noarrow.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar_noarrow@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar_noarrow@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBeetrootSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBeetrootSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBeetrootSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlackSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlackSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlackSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconCandySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconCandySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconCandySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconGreySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconGreySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconGreySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconLemonSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconLemonSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconLemonSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconTransparentSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconTransparentSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconTransparentSmall@3x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall@2x.png",
+				"${PODS_ROOT}/EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconWhiteSmall@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IndoorLocationWithARKit/Pods-IndoorLocationWithARKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E7012319D3829EE4BE4962 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IndoorLocationWithARKit/Pods-IndoorLocationWithARKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A5075D261F73EDBE00522C24 /* Check TODOs */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +247,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "tags=\"TODO:\"\nmatches=`find \"${SRCROOT}\" \\( -name \"*.m\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($tags).*\\$\"`\necho \"$matches\" | perl -p -e \"s/($tags)/ error: \\$1/\"\n[ -z \"$matches\" ] || exit 1";
+		};
+		F188B8CFD49C1E005EA6AB5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IndoorLocationWithARKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -294,6 +407,7 @@
 		};
 		A5075D241F73E67700522C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA154AEDE19B88406C4785C7 /* Pods-IndoorLocationWithARKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +423,7 @@
 		};
 		A5075D251F73E67700522C24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58743931813F378FF5F8821D /* Pods-IndoorLocationWithARKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
