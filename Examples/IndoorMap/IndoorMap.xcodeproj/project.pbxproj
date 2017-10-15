@@ -126,6 +126,7 @@
 				TargetAttributes = {
 					AE97641B1C1F084E0058A4DC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 556343DW3U;
 						LastSwiftMigration = 0820;
 					};
 				};
@@ -348,9 +349,10 @@
 			baseConfigurationReference = 1FAE69C9DC4FC3423C8FB152 /* Pods-IndoorMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 556343DW3U;
 				INFOPLIST_FILE = IndoorMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.estimote.IndoorMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trollwerks.indoormap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = IndoorMap/ObjCBridge.h;
 				SWIFT_VERSION = 3.0;
@@ -362,9 +364,10 @@
 			baseConfigurationReference = 3D33C44C5E1C7D7236B1453F /* Pods-IndoorMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 556343DW3U;
 				INFOPLIST_FILE = IndoorMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.estimote.IndoorMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trollwerks.indoormap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = IndoorMap/ObjCBridge.h;
 				SWIFT_VERSION = 3.0;
